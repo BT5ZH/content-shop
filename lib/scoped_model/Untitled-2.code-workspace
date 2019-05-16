@@ -1,0 +1,13 @@
+curl -X POST --user 57527cu0brjoptpp8sd8aako6s:qo95bsi90tupfs5h4r0tn1lbkfkkojtdjbvpo07tov2u5so4mo2 'https://researchfuture.auth.us-east-2.amazoncognito.com/oauth2/token?grant_type=client_credentials' -H 'Content-Type: application/x-www-form-urlencoded'
+
+curl -X POST --user 57527cu0brjoptpp8sd8aako6s:qo95bsi90tupfs5h4r0tn1lbkfkkojtdjbvpo07tov2u5so4mo2 'https://mkev0ivepk.execute-api.us-east-2.amazonaws.com/dev-cs/OAuthAPITest?TableName=products' -H 'Content-Type: application/json' -d '{"TableName": "products","Item": {"product": {"S": "android"},"id": {"S": "1"}}}'
+curl -X POST 'https://mkev0ivepk.execute-api.us-east-2.amazonaws.com/dev-cs/OAuthAPITest?TableName=products' -H 'Content-Type: application/json' -d '{"TableName": "products","Item": {"product": {"S": "android"},"id": {"S": "2"}}}'
+
+
+curl -X POST 'https://mkev0ivepk.execute-api.us-east-2.amazonaws.com/dev-cs/OAuthAPITest?TableName=products' 
+-H 'Content-Type: application/json' 
+-H 'Authorization:eyJraWQiOiI3dUZTYWc4M3M2alNqWnJhOU1aaUgrY1JodHR3SXJ5SjBsYTQxR0JrSTh3PSIsImFsZyI6IlJTMjU2In0.
+eyJzdWIiOiI1NzUyN2N1MGJyam9wdHBwOHNkOGFha282cyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiY2h1bmstc2hvcC1pZFwvcmVhZF9jYXJkIGNodW5rLXNob3AtaWRcL2NyZWF0ZV9jYXJkIGNodW5rLXNob3AtaWRcL2RlbGV0ZV9jYXJkIiwiYXV0aF90aW1lIjoxNTU3NzQ4ODI3LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0yLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMl9LNmpPY09KUU8iLCJleHAiOjE1NTc3NTI0MjcsImlhdCI6MTU1Nzc0ODgyNywidmVyc2lvbiI6MiwianRpIjoiMjExZmViNGYtYTBmNC00ZWQ1LWFjMWMtNDRiNWU2Yzc5YjE3IiwiY2xpZW50X2lkIjoiNTc1MjdjdTBicmpvcHRwcDhzZDhhYWtvNnMifQ.
+RRzq-PZK_9dFz1FdNmJuF0osO8aLzBSWxvwiDE5dx9OWm3Vp8ZS2c58-0Q9AQDtUnakV0_rJcdtjBVApEdRYlABTQTnf_0vWMzN088VPN7ga7YQSSdfRb8p0qdmmGP72FjZYRWYo3UjEo5c02MEbOpKFIuWG8HG3m0HwIn96NNCT6LTVU0XbbLC36dAtJHzcvaVHkHCqDIF14Y1QknRGdf9FJOWyx9GgYqe69TwjgWlEoK9G64McW4xuNCP0DPV4u-cFGxlhIyH0i67XBX_4lnZcdGGYhpoEGPwjMyuLY5FfotLdnHSQTg60gfQTgBzKFQxEpT4oyJSuwV1glhsXrw' -d '{"TableName": "products","Item": {"product": {"S": "apple"},"id": {"S": "2"}}}'
+
+Authorization: AWS4-HMAC-SHA256 Credential=AKIDEXAMPLE/20150830/us-east-1/iam/aws4_request, SignedHeaders=content-type;host;x-amz-date, Signature=5d672d79c15b13162d9279b0855cfba6789a8edb4c82c400e06b5924a6f2b5d7
